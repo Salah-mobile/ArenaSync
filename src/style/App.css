@@ -1,0 +1,180 @@
+.HeadPage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .icons{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        font-size: 30px;
+        color: #4B5563; 
+    }
+}
+.bareS{
+    i{
+        padding-inline: 5px;
+        color: #6B7280; 
+    }
+    align-items: center;
+    margin-inline: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #F3F4F6; 
+    border-radius: 20px;
+    padding-inline: 8px;
+    padding-block: 8px;
+    input{
+        width: 70%;
+        height: 30px;
+        border: 0;
+        padding-inline: 20px;
+        font-size: 20px;
+        background-color: #F3F4F6; 
+        color: #111827; 
+    }
+}
+.CardPlace{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF; 
+    border-radius: 30px;
+    margin:20px 20px 90px;
+    .headCard{
+        display: flex;
+        justify-content: space-between;
+    }
+     
+    .card{
+        margin: 20px;
+        background-color: #E0F2FE; 
+        padding: 20px;
+        border-radius: 20px;
+        .headCard{
+            img{
+                border-radius: 50%;
+            }
+            p{
+                background-color: #3B82F6; 
+                color: #FFFFFF;
+                padding: 10px;
+                border-radius: 40px;
+                text-align: center;
+            }
+        }
+        .cardBody{
+           border-bottom: 1px solid #D1D5DB; 
+           padding: 10px;
+           p{
+            font-size: 20px;
+            color: #111827; 
+           }
+        }
+        .informationsCard ul{
+           list-style: none;
+           span{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            color: #374151; 
+           }
+        }
+    }
+}
+
+.menuBottom {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    color: #3B82F6;
+    padding-inline: 20px;
+    padding-block: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    a {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      text-decoration: none;
+    }
+
+    &:hover {
+      background-color: #3B82F6;
+      color: white;
+    }
+  }
+
+  li i {
+    font-size: 24px;
+  }
+
+  li p {
+    margin: 0;
+    font-size: 14px;
+  }
+}
+.card{
+       .headCard{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       }
+        margin: 20px;
+        background-color: #E0F2FE; 
+        padding: 20px;
+        border-radius: 20px;
+        .headCard{
+            img{
+                border-radius: 50%;
+            }
+            p{
+                background-color: #3B82F6; 
+                color: #FFFFFF;
+                padding: 10px;
+                border-radius: 40px;
+                text-align: center;
+            }
+        }
+        .cardBody{
+           border-bottom: 1px solid #D1D5DB; 
+           padding: 10px;
+           p{
+            font-size: 20px;
+            color: #111827; 
+           }
+        }
+        .informationsCard ul{
+           list-style: none;
+           span{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            color: #374151; 
+           }
+        }
+    }
+
+.headpageS{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 30px;
+    i{
+        font-size: 30px;
+    }
+}
