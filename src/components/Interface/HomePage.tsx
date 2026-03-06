@@ -6,7 +6,7 @@ function HomePage(){
         <>
          <HeadPageH/>
          <Barescherch/>
-         <CardsDisplay/>  
+         {/* <CardsDisplay/>   */}
         </>
     );
 }
