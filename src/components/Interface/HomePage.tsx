@@ -1,5 +1,5 @@
 import CardsDisplay from "../layoutes/CardsDispalay";
-import HeadPageH from "../layoutes/headPageHome";
+import HeadPageH from "../layoutes/HeadPageHome";
 import Barescherch from "../layoutes/SearchBar";
 function HomePage(){
     return(

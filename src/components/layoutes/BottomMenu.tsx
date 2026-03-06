@@ -1,24 +1,24 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 function BottomMenu() {
   return (
     <ul className="menuBottom">
       <li>
-        <Link to="/">
+        <NavLink to="/">
           <i className="ri-home-2-fill"></i>
           <p>Home</p>
-        </Link>
+        </NavLink>
       </li>
       <li>
-        <Link to="/tournament">
+        <NavLink to="/tournament">
           <i className="ri-calendar-2-line"></i>
           <p>Tournament</p>
-        </Link>
+        </NavLink>
       </li>
       <li>
-        <Link to="/profile">
+        <NavLink to="/profile">
           <i className="ri-user-fill"></i>
           <p>Profile</p>
-        </Link>
+        </NavLink>
       </li>
     </ul>
   );

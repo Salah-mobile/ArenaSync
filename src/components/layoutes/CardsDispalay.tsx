@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { tournamentData } from "../../data/tournamentDB";
 function CardsDisplay(){
      const navigate=useNavigate()
-    return(
+     return(
         <div className="CardPlace" >
             {
               tournamentData.map((it)=>(
@@ -31,5 +31,5 @@ function CardsDisplay(){
             }
         </div>
     )
- }
+}
 export default CardsDisplay;

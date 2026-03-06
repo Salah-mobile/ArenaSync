@@ -1,5 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { tournamentData } from "../../data/tournamentDB";
+import TabLayout from "../layoutes/TabLayout";
 function DisplaySport() {
     const navigate=useNavigate()
     const {id}=useParams()
@@ -34,6 +35,10 @@ function DisplaySport() {
                   </ul>
                 </div>
                </div>
+               <div className="badyPageS">
+               <TabLayout/>
+               </div>
+               
       </>
     );
 }

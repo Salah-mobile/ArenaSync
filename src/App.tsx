@@ -14,7 +14,6 @@ function App() {
         <Route path="/profile" element={<ProfilePages/>} />
         <Route path="/tournament" element={<TournamentPage />} />
         <Route path="/dispalyS/:id" element={<DisplaySport/>}>
-        
         </Route>
       </Routes>
     </BrowserRouter>

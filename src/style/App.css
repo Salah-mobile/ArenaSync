@@ -178,3 +178,28 @@
         font-size: 30px;
     }
 }
+.badyPageS{
+    background-color:white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding-inline: 20px;
+    padding-top: 20px;
+    .tabLayoutElement{
+        background-color: #3B82F6;
+        padding-block: 4px;
+        border-radius: 30px;
+        ul{
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            a{
+                background-color: aliceblue; 
+                padding-inline: 40px;
+                border-radius: 30px;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
