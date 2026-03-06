@@ -1,93 +1,120 @@
-.HeadPage{
+.HeadPage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .icons {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    gap: 20px;
+    font-size: 30px;
+    color: #4b5563;
+  }
+}
+
+
+.bareS {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-inline: 40px;
+  background-color: #f3f4f6;
+  border-radius: 20px;
+  padding: 8px;
+
+  i {
+    padding-inline: 5px;
+    color: #6b7280;
+  }
+
+  input {
+    width: 70%;
+    height: 30px;
+    border: 0;
+    padding-inline: 20px;
+    font-size: 20px;
+    background-color: #f3f4f6;
+    color: #111827;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+
+
+.CardPlace {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 30px;
+  margin: 20px 20px 90px;
+
+  > .headCard {
+    display: flex;
     justify-content: space-between;
-    .icons{
+  }
+}
+
+
+.card {
+  margin: 20px;
+  background-color: #e0f2fe;
+  padding: 20px;
+  border-radius: 20px;
+
+  .headCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    img {
+      border-radius: 50%;
+    }
+
+    p {
+      background-color: #3b82f6;
+      color: #ffffff;
+      padding: 10px;
+      border-radius: 40px;
+      text-align: center;
+    }
+  }
+
+  .cardBody {
+    border-bottom: 1px solid #d1d5db;
+    padding: 10px;
+
+    p {
+      font-size: 20px;
+      color: #111827;
+    }
+  }
+
+  .informationsCard {
+    ul {
+      list-style: none;
+
+      span {
         display: flex;
         flex-direction: row;
-        gap: 20px;
-        font-size: 30px;
-        color: #4B5563; 
+        align-items: center;
+        gap: 10px;
+        color: #374151;
+      }
     }
-}
-.bareS{
-    i{
-        padding-inline: 5px;
-        color: #6B7280; 
-    }
-    align-items: center;
-    margin-inline: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #F3F4F6; 
-    border-radius: 20px;
-    padding-inline: 8px;
-    padding-block: 8px;
-    input{
-        width: 70%;
-        height: 30px;
-        border: 0;
-        padding-inline: 20px;
-        font-size: 20px;
-        background-color: #F3F4F6; 
-        color: #111827; 
-    }
-}
-.CardPlace{
-    display: flex;
-    flex-direction: column;
-    background-color: #FFFFFF; 
-    border-radius: 30px;
-    margin:20px 20px 90px;
-    .headCard{
-        display: flex;
-        justify-content: space-between;
-    }
-     
-    .card{
-        margin: 20px;
-        background-color: #E0F2FE; 
-        padding: 20px;
-        border-radius: 20px;
-        .headCard{
-            img{
-                border-radius: 50%;
-            }
-            p{
-                background-color: #3B82F6; 
-                color: #FFFFFF;
-                padding: 10px;
-                border-radius: 40px;
-                text-align: center;
-            }
-        }
-        .cardBody{
-           border-bottom: 1px solid #D1D5DB; 
-           padding: 10px;
-           p{
-            font-size: 20px;
-            color: #111827; 
-           }
-        }
-        .informationsCard ul{
-           list-style: none;
-           span{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 10px;
-            color: #374151; 
-           }
-        }
-    }
+  }
 }
 
 .menuBottom {
   list-style: none;
   display: flex;
   justify-content: space-around;
+
   position: fixed;
   bottom: 0;
   left: 0;
@@ -97,24 +124,42 @@
     display: flex;
     align-items: center;
     gap: 20px;
+
     background-color: white;
-    color: #3B82F6;
+    color: #3b82f6;
     padding-inline: 20px;
     padding-block: 15px;
     border-radius: 30px;
     cursor: pointer;
+
     a {
       display: flex;
       align-items: center;
       gap: 20px;
       width: 100%;
       text-decoration: none;
+      color: inherit; 
+    }
+
+   
+    &.active {
+      background-color: #3b82f6;
+      color: white;
     }
 
     &:hover {
-      background-color: #3B82F6;
+      background-color: #3b82f6;
       color: white;
     }
+  }
+
+ 
+  a.active {
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 30px;
+    padding-inline: 20px;
+    padding-block: 15px;
   }
 
   li i {
@@ -126,80 +171,140 @@
     font-size: 14px;
   }
 }
-.card{
-       .headCard{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-       }
-        margin: 20px;
-        background-color: #E0F2FE; 
-        padding: 20px;
-        border-radius: 20px;
-        .headCard{
-            img{
-                border-radius: 50%;
-            }
-            p{
-                background-color: #3B82F6; 
-                color: #FFFFFF;
-                padding: 10px;
-                border-radius: 40px;
-                text-align: center;
-            }
-        }
-        .cardBody{
-           border-bottom: 1px solid #D1D5DB; 
-           padding: 10px;
-           p{
-            font-size: 20px;
-            color: #111827; 
-           }
-        }
-        .informationsCard ul{
-           list-style: none;
-           span{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 10px;
-            color: #374151; 
-           }
-        }
-    }
 
-.headpageS{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-inline: 30px;
-    i{
-        font-size: 30px;
-    }
+.headpageS {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 30px;
+
+  i {
+    font-size: 30px;
+  }
 }
-.badyPageS{
-    background-color:white;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    padding-inline: 20px;
-    padding-top: 20px;
-    .tabLayoutElement{
-        background-color: #3B82F6;
-        padding-block: 4px;
+
+.badyPageS {
+  background-color: white;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding-inline: 20px;
+  padding-top: 20px;
+
+  .tabLayoutElement {
+    background-color: #3b82f6;
+    padding-block: 4px;
+    border-radius: 30px;
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+
+      a {
+        background-color: aliceblue;
+        padding-inline: 40px;
         border-radius: 30px;
-        ul{
-            display: flex;
-            justify-content: space-around;
-            list-style: none;
-            a{
-                background-color: aliceblue; 
-                padding-inline: 40px;
-                border-radius: 30px;
-                text-decoration: none;
-            }
-        }
+        text-decoration: none;
+        color: inherit;
+      }
+
+     
+      a.active {
+        background-color: black;
+        color: white;
+      }
     }
+  }
 }
 
 
+.rowsPL {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.rowP {
+  display: flex;
+  background-color: #374151;
+  justify-content: space-between;
+  padding-inline: 10px;
+  align-items: center;
+  border-radius: 30px;
+  color: white;
+  font-size: 0.8rem;
+  font-family: "poppins";
+
+  img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+
+  div {
+    text-align: center;
+
+    .Pending {
+      background-color: orangered;
+      padding-block: 4px;
+      border-radius: 20px;
+    }
+
+    .Confirmed {
+      background-color: green;
+      padding-block: 4px;
+      border-radius: 20px;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .bareS {
+    margin-inline: 16px;
+
+    input {
+      width: 100%;
+      font-size: 16px;
+      padding-inline: 12px;
+    }
+  }
+
+  .CardPlace {
+    margin: 12px 12px 90px;
+    border-radius: 20px;
+  }
+
+  .card {
+    margin: 12px;
+    padding: 14px;
+
+    .cardBody p {
+      font-size: 16px;
+    }
+  }
+
+  .rowsPL {
+    grid-template-columns: 1fr; 
+  }
+
+  .menuBottom {
+    justify-content: space-between;
+    padding-inline: 10px;
+
+    li {
+      gap: 10px;
+      padding-inline: 14px;
+      padding-block: 12px;
+    }
+
+    li i {
+      font-size: 20px;
+    }
+
+    li p {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,22 +1,21 @@
 import { NavLink } from "react-router-dom";
-
 function TabLayout() {
     return(
     <div className="tabLayoutElement">
         <ul>
-           <NavLink to={""}>
+           <NavLink to={"Info"}>
             <li>
                 <p>Info</p>
             </li>
            </NavLink>
-             <NavLink to={""}>
+             <NavLink to={"Participant"}>
             <li>
-                <p>Info</p>
+                <p>Participants</p>
             </li>
            </NavLink>
-            <NavLink to={""}>
+            <NavLink to={"Bracket"}>
             <li>
-                <p>Info</p>
+                <p>Brakets</p>
             </li>
            </NavLink>
         </ul>

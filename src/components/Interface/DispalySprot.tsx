@@ -1,4 +1,4 @@
-import { useNavigate, useParams } from "react-router-dom";
+import { Outlet, useNavigate, useParams } from "react-router-dom";
 import { tournamentData } from "../../data/tournamentDB";
 import TabLayout from "../layoutes/TabLayout";
 function DisplaySport() {
@@ -11,10 +11,10 @@ function DisplaySport() {
     return(
       <>
       <div className="headpageS">
-      <i className="ri-arrow-left-fill" onClick={()=>{navigate(-1)}} ></i>
+      <i className="ri-arrow-left-fill" onClick={()=>{navigate("/")}} ></i>
       <h1>{index.title}</h1>
       </div>
-       <div  className="card" onClick={()=>{navigate(`/dispalyS/${index.id}`)}}>
+       <div  className="card" >
                 <div className="headCard">
                   <img src={index.image} alt="" width="100px"  />
                   <div>
@@ -37,6 +37,7 @@ function DisplaySport() {
                </div>
                <div className="badyPageS">
                <TabLayout/>
+               <Outlet/>
                </div>
                
       </>
